@@ -39,13 +39,22 @@ const users = [
     {userId: 2,firstName: 'mohit', gender: 'male'},
     {userId: 3,firstName: 'nitish', gender: 'male'},
 ]
-for(let user of users){
+for(let user of users){    /* to print line by line objects */
     console.log(user.firstName);
 }
+// nested destructuring
+const [user1,user2,user3]=users;
+console.log(user1);/*prints the 1st index in users object or
+                     we can say stores indexwise*/
+ const [{firstName}, ,{gender}]=users; /* stores name of index1 and gender of index3*/
+ const [{firstName:userIdfirstName,userid}, ,{gender:usergender}]=users;
+ 
+ //functions 
 function singHappyBirthday(){
     console.log("happy birthday to you ......");
 }
-function sumThreeNumbers(number1, number2, number3){
+singhappyBirthday();//call function
+function sumThreeNumbers(number1, number2, number3){  // number1,number2,number3 are the function parameter
     return number1 + number2 + number3;
 }
 
