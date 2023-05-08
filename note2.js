@@ -154,9 +154,10 @@ console.log(ans);
 // const isEven = function(number){
 //     return number % 2 === 0;
 // }
-const isEven = number => number % 2 === 0;
+const isEven = number => number % 2 === 0; //we can remove () only while using 1 parameter
+// can remove {} for code in one line
 console.log(isEven(4));
-const firstChar = anyString => anyString[0];
+const firstChar =( anyString )=> {anyString[0];}
 console.log(firstChar("harshit"));
 const findTarget = (array, target) => {
     for(let i = 0; i<array.length; i++){
