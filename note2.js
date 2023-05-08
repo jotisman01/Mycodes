@@ -169,7 +169,8 @@ const findTarget = (array, target) => {
 }
 
 
-// hoisting 
+/* hoisting  means we can call a function beforew declare it 
+like we can call it then declare it but it can't works for expression and arrow function*/
 // hello();
 // function hello(){
 //     console.log("hello world");
@@ -177,22 +178,6 @@ const findTarget = (array, target) => {
 // console.log(hello);
 // const hello = "hello world";
 // console.log(hello);
-
-// functions inside function 
-function app(){
-    const myFunc = () =>{
-        console.log("hello from myFunc")
-    }
-    const addTwo = (num1, num2) =>{
-        return num1 + num2;
-    }
-    const mul = (num1, num2) => num1* num2;
-    console.log("inside app");
-    myFunc();
-    console.log(addTwo(2,3));
-    console.log(mul(2,3));
-}
-app();
 
 
 // functions inside function 
