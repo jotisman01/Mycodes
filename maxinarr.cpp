@@ -9,6 +9,15 @@ int getmax(int arry[],int n){
       }
     return max;
 }
+int getmin(int arry[],int n){
+      int min=INT16_MAX;
+      for(int i=0;i<n;i++){
+      if(arry[i]<min){
+       min=arry[i];
+      }
+      }
+    return min;
+}
 int main(){
     int size;
     cin>>size;
@@ -17,4 +26,5 @@ int main(){
         cin>>arry[i];
     }  
    cout<<"Maximum value is"<<getmax(arry,size)<<endl;
+   cout<<"Minimum value is"<<getmin(arry,size)<<endl;
 }
