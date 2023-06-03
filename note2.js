@@ -357,10 +357,14 @@ const users = [
     {firstName: "nitish", age: 22},
     {firstName: "garima", age: 20},
 ]
+users.forEach(function(user){
+    console.log(users.firstName);
+});
 const userNames = users.map((user)=>{
     return user.firstName;
 });
 console.log(userNames);
+
 
 // filter method 
 const numbers = [1,3,2,6,4,8];
