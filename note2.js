@@ -266,7 +266,7 @@ function addAll(...numbers){
 const ans = addAll(4,5,4,2,10);
 console.log(ans);
 
-// param destructuring 
+// parameter  destructuring 
 // object 
 // react 
 const person = {
@@ -274,7 +274,7 @@ const person = {
     gender: "male",
     age: 500
 }
-// function printDetails(obj){
+// function printDetails(obj){ 
 //     console.log(obj.firstName);
 //     console.log(obj.gender);
 // }
@@ -289,23 +289,28 @@ printDetails(person);
 // callback functions 
 function myFunc2(name){
     console.log("inside my func 2")
-    console.log(`your name is ${name}`);
+    console.log(`your name is ${name}`);   //These are Higher order function
 }
 function myFunc(callback){
     console.log("hello there I am a func and I can..")
-    callback("harshit");
+    callback("Jotisman");
 }
 myFunc(myFunc2);
 
+
 // function returning function 
-function myFunc(){
-    function hello(){
+function myFunc(){        //These are Higher order function
+    function hello(){                /*return function(){
+                                       return "hello world";
+                                       };
+                                       }  */
         return "hello world"
     }
     return hello;
 }
 const ans = myFunc();
 console.log(ans());
+
 
 // important array methods 
 const numbers = [4,2,5,8];
@@ -318,6 +323,9 @@ const numbers = [4,2,5,8];
 // numbers.forEach(function(number, index){
 //     console.log(number*3, index);
 // })
+for(let i=0;i<numbers.length;i++){
+      myfunc(number[i],i);
+}
 const users = [
     {firstName: "harshit", age: 23},
     {firstName: "mohit", age: 21},
