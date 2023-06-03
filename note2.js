@@ -332,7 +332,7 @@ const users = [
     {firstName: "nitish", age: 22},
     {firstName: "garima", age: 20},
 ]
-// users.forEach(function(user){
+// users.forEach(function(user){     //we can creat anonymous func still for each loop executes
 //     console.log(user.firstName);
 // });
 // users.forEach((user, index)=>{
@@ -344,7 +344,7 @@ const users = [
 
 // map method 
 // const numbers = [3,4,6,1,8];
-// const square = function(number){
+// const square = function(number){  \
 //     return number*number;
 // }
 // const squareNumber = numbers.map((number, index)=>{
