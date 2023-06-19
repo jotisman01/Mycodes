@@ -380,7 +380,7 @@ const numbers = [1,2,3,4,5, 10];
 //     return accumulator + currentValue;
 // }, 100);
 // console.log(sum);
-// accumulator , currentValue,  return 
+// accumulator , currentValue,  return //accumulator gets 0th index value then it stores return values
 // 1               2              3 
 // 3               3              6
 // 6               4              10
