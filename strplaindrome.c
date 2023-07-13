@@ -11,7 +11,7 @@ int main(){
   }
  
   for(i=0;i<length/2;i++){
-    if(string[i]!=string[strlen(string)-1-i]){
+    if(string[i]!=string[length-1-i]){
       flag=1;
       break;
     }
