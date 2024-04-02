@@ -28,7 +28,7 @@ let firstName = "harshit";
 firstName = "Mohit";
 console.log(firstName);
 
-// block scope vs funtion scope (covered later in this video)
+// block scope vs funtion scope
 // declare constants 
 const pi = 3.14;
 console.log(pi)
